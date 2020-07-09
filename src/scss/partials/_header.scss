@@ -1,0 +1,39 @@
+.navbar {
+  @include container;
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border-bottom: 2px solid $text_primary_color;
+
+  .navbar-logo{
+    img {
+      width: 150px;
+    }
+  }
+
+  .navbar-nav{
+    li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    a {
+      @include text-primary;
+    }
+
+    .navbar-nav-button {
+      a{
+        @include button-secondary;
+        padding: 15px;
+      }
+
+      img{
+        @include button-img;
+      }
+    }
+  }
+}
+
+.header-hamburgerMenu {
+}

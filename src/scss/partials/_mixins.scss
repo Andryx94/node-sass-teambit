@@ -1,0 +1,46 @@
+@mixin flex{
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin clearfix{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@mixin centered{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin container{
+  width: 1450px;
+  margin: 0 auto;
+}
+
+@mixin text-primary{
+  font-size: 22px;
+  font-weight: 800;
+  color: $text_primary_color;
+}
+
+@mixin button-img{
+  vertical-align: bottom;
+  width: 28px;
+}
+
+@mixin button-primary{
+  background-color: $button_primary_color;
+  color: $text_tertiary_color;
+  border-radius: 5px;
+}
+
+@mixin button-secondary{
+  background-color: $button_secondary_color;
+  color: $text_secondary_color;
+  border-radius: 5px;
+}

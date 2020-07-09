@@ -1,0 +1,76 @@
+.jumbotron {
+  @include container;
+  @include flex;
+  padding: 70px 0;
+
+  &-text, &-img {
+    width: 50%;
+  }
+
+  &-text{
+    h1,{
+      font-size: 68px;
+      font-weight: 600;
+    }
+
+    h2{
+      padding-top: 10px;
+      padding-bottom: 70px;
+      font-size: 32px;
+    }
+
+    a, span{
+      @include text-primary;
+    }
+
+    a {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    div{
+      margin-bottom: 30px;
+
+      a{
+        @include button-primary;
+        padding: 10px;
+
+        img{
+          @include button-img;
+        }
+      }
+    }
+  }
+
+  &-img{
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.traditionalPeople {
+  background-color: $background_primary_color;
+  text-align: center;
+
+  & > div {
+    @include container;
+  }
+
+  .tP-flex {
+    @include flex;
+  }
+
+  .tP-element {
+    img {
+      height: 170px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .tP-elementBig {
+    img {
+      height: 480px;
+    }
+  }
+}

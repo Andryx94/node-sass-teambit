@@ -1,0 +1,26 @@
+/* Generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  color: $text_primary_color;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* fine generali */
+
+/* versione mobile */
+@media all and (max-width: 767px) {
+}
+/* fine versione mobile */
