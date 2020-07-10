@@ -27,7 +27,7 @@ a {
 /* fine versione mobile */
 
 .navbar {
-  width: 1450px;
+  max-width: 1450px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -64,7 +64,7 @@ a {
 }
 
 .jumbotron {
-  width: 1450px;
+  max-width: 1450px;
   margin: 0 auto;
   display: flex;
   padding: 70px 0;
@@ -121,23 +121,112 @@ a {
 .traditionalPeople {
   background-color: #fee7d1;
   text-align: center;
+  font-size: 20px;
 }
 
-.traditionalPeople > div {
-  width: 1450px;
+.traditionalPeople .tP-section-1 {
+  border-bottom: 2px solid #58402c;
+}
+
+.traditionalPeople .tP-section-1 {
+  max-width: 1450px;
   margin: 0 auto;
 }
 
-.traditionalPeople .tP-flex {
-  display: flex;
+.traditionalPeople .tP-section-1 h2 {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 60px 300px;
 }
 
-.traditionalPeople .tP-element img {
+.traditionalPeople .tP-section-1 .tP-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.traditionalPeople .tP-section-1 .tP-element {
+  width: calc(100% / 3);
+}
+
+.traditionalPeople .tP-section-1 .tP-element img {
   height: 170px;
   padding-bottom: 20px;
 }
 
-.traditionalPeople .tP-elementBig img {
-  height: 480px;
+.traditionalPeople .tP-section-1 .tP-elementBig {
+  width: 100%;
+  padding: 150px 0;
+}
+
+.traditionalPeople .tP-section-1 .tP-elementBig img {
+  height: 450px;
+}
+
+.traditionalPeople .tP-section-2 {
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.traditionalPeople .tP-section-2 h2 {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 60px 300px;
+}
+
+.traditionalPeople .tP-section-2 .tP-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.traditionalPeople .tP-section-2 .tP-element {
+  width: calc(100% / 3);
+}
+
+.traditionalPeople .tP-section-2 .tP-element img {
+  height: 170px;
+  padding-bottom: 20px;
+}
+
+.traditionalPeople .tP-section-2 .tP-elementBig {
+  width: 100%;
+  padding: 150px 0;
+}
+
+.traditionalPeople .tP-section-2 .tP-elementBig img {
+  height: 450px;
+}
+
+.traditionalPeople .tP-section-3 {
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.traditionalPeople .tP-section-3 h2 {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 60px 300px;
+}
+
+.traditionalPeople .tP-section-3 .tP-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.traditionalPeople .tP-section-3 .tP-element {
+  width: calc(100% / 3);
+}
+
+.traditionalPeople .tP-section-3 .tP-element img {
+  height: 170px;
+  padding-bottom: 20px;
+}
+
+.traditionalPeople .tP-section-3 .tP-elementBig {
+  width: 100%;
+  padding: 150px 0;
+}
+
+.traditionalPeople .tP-section-3 .tP-elementBig img {
+  height: 450px;
 }
 

@@ -52,25 +52,55 @@
 .traditionalPeople {
   background-color: $background_primary_color;
   text-align: center;
+  font-size: 20px;
 
-  & > div {
-    @include container;
-  }
-
-  .tP-flex {
-    @include flex;
-  }
-
-  .tP-element {
-    img {
-      height: 170px;
-      padding-bottom: 20px;
+  @for $i from 1 through 1 {
+    .tP-section-#{$i}{
+      border-bottom: 2px solid $text_primary_color;
     }
   }
 
-  .tP-elementBig {
-    img {
-      height: 480px;
+  @for $i from 1 through 3 {
+    .tP-section-#{$i}{
+      @include container;
+
+      h2 {
+        font-size: 40px;
+        font-weight: 600;
+        padding: 60px 0;
+        // padding: 60px 300px;
+      }
+
+      .tP-flex {
+        @include flex;
+        flex-wrap: wrap;
+      }
+
+      .tP-element {
+        width: calc(100% / 3);
+
+        img {
+          height: 170px;
+          padding-bottom: 20px;
+        }
+      }
+
+      .tP-elementBig {
+        width: 100%;
+        padding: 150px 0;
+
+        img {
+          height: 450px;
+        }
+      }
     }
   }
+}
+
+.previewScreenshot {
+
+}
+
+.signUp {
+
 }
