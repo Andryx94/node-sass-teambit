@@ -24,8 +24,7 @@
 
     .navbar-nav-button {
       a{
-        @include button-secondary;
-        padding: 15px;
+        @include button-primary;        
       }
 
       img{

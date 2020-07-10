@@ -17,6 +17,30 @@ li {
 
 a {
   text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: $text_secondary_color;
+}
+
+p{
+  font-weight: 800;
+}
+
+h1{
+  font-size: 68px;
+  font-weight: 800;
+}
+
+h2{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 60px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 50px;
 }
 /* fine generali */
 

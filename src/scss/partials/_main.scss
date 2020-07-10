@@ -1,106 +1,121 @@
-.jumbotron {
-  @include container;
-  @include flex;
-  padding: 70px 0;
-
-  &-text, &-img {
-    width: 50%;
+main {
+  & > section{
+    padding: 60px 0;
   }
+  .jumbotron {
+    @include container;
+    @include flex;
+    padding: 70px 0;
 
-  &-text{
-    h1,{
-      font-size: 68px;
-      font-weight: 600;
-    }
-
-    h2{
+    h3{
       padding-top: 10px;
       padding-bottom: 70px;
-      font-size: 32px;
     }
 
-    a, span{
-      @include text-primary;
+    &-text, &-img {
+      width: 50%;
     }
 
-    a {
-      font-size: 20px;
-      font-weight: 600;
-    }
+    &-text{
+      a, span{
+        @include text-primary;
+      }
 
-    div{
-      margin-bottom: 30px;
+      div{
+        margin-bottom: 30px;
 
-      a{
-        @include button-primary;
-        padding: 10px;
+        a{
+          @include button-primary;
 
-        img{
-          @include button-img;
+          img{
+            @include button-img;
+          }
         }
       }
     }
-  }
 
-  &-img{
-    img{
-      width: 100%;
-    }
-  }
-}
-
-.traditionalPeople {
-  background-color: $background_primary_color;
-  text-align: center;
-  font-size: 20px;
-
-  @for $i from 1 through 1 {
-    .tP-section-#{$i}{
-      border-bottom: 2px solid $text_primary_color;
-    }
-  }
-
-  @for $i from 1 through 3 {
-    .tP-section-#{$i}{
-      @include container;
-
-      h2 {
-        font-size: 40px;
-        font-weight: 600;
-        padding: 60px 0;
-        // padding: 60px 300px;
-      }
-
-      .tP-flex {
-        @include flex;
-        flex-wrap: wrap;
-      }
-
-      .tP-element {
-        width: calc(100% / 3);
-
-        img {
-          height: 170px;
-          padding-bottom: 20px;
-        }
-      }
-
-      .tP-elementBig {
+    &-img{
+      img{
         width: 100%;
-        padding: 150px 0;
+      }
+    }
+  }
 
-        img {
-          height: 450px;
+  .traditionalPeople {
+    background-color: $background_primary_color;
+    text-align: center;
+    font-size: 20px;
+
+    @for $i from 1 through 1 {
+      .tP-section-#{$i}{
+        border-bottom: 2px solid $text_primary_color;
+        margin-bottom: 60px; //NON FUNZIONA, DA VALUTARE
+      }
+    }
+
+    @for $i from 1 through 3 {
+      .tP-section-#{$i}{
+        @include container;
+
+        .tP-flex {
+          @include flex;
+          flex-wrap: wrap;
+        }
+
+        .tP-element {
+          width: calc(100% / 3);
+          padding-top: 60px;
+
+          img {
+            height: 170px;
+            padding-bottom: 20px;
+          }
+        }
+
+        .tP-elementBig {
+          width: 100%;
+          padding: 150px 0;
+
+          img {
+            height: 450px;
+          }
         }
       }
     }
   }
-}
 
-.previewScreenshot {
+  .previewScreenshot {
+    .pS-flex {
+      @include flex;
 
-}
+      & > div {
+        width: 50%;
 
-.signUp {
+        h3{
+          padding-top: 50px;
+          padding-bottom: 40px;
+        }
 
+        img {
+          width: 100%;
+        }
+      }
+
+      .pS-text {
+        width: 25%;
+
+        img {
+          padding: 40px 0;
+
+        }
+      }
+    }
+
+    & .reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .signUp {
+  }
 }

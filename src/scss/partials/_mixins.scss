@@ -23,7 +23,6 @@
 }
 
 @mixin text-primary{
-  font-size: 22px;
   font-weight: 800;
   color: $text_primary_color;
 }
@@ -37,10 +36,5 @@
   background-color: $button_primary_color;
   color: $text_tertiary_color;
   border-radius: 5px;
-}
-
-@mixin button-secondary{
-  background-color: $button_secondary_color;
-  color: $text_secondary_color;
-  border-radius: 5px;
+  padding: 15px;
 }
