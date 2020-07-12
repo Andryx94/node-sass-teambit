@@ -1,4 +1,6 @@
 main {
+  border-top: 2px solid $text_primary_color;
+
   & > section{
     padding: 60px 0;
   }
@@ -15,6 +17,10 @@ main {
 
     &-text, &-img {
       width: 50%;
+
+      @media all and (max-width: 767px) {
+        width: 100%;
+      }
     }
 
     &-text{
@@ -49,6 +55,9 @@ main {
       .tP-element {
         width: calc(100% / 3);
         padding-top: 60px;
+        @media all and (max-width: 767px) {
+          width: 100%;
+        }
 
         img {
           height: 170px;
@@ -80,6 +89,9 @@ main {
 
       & > div {
         width: 50%;
+        @media all and (max-width: 767px) {
+          width: 100%
+        }
 
         h3{
           padding-top: 50px;
@@ -93,6 +105,9 @@ main {
 
       .pS-text {
         width: 25%;
+        @media all and (max-width: 767px) {
+          width: 100%
+        }
 
         a{
           color: $text_secondary_color;
@@ -107,6 +122,9 @@ main {
 
     & .reverse {
       flex-direction: row-reverse;
+      @media all and (max-width: 767px) {
+        flex-direction: column;
+      }
     }
   }
 
@@ -122,6 +140,10 @@ main {
     h2 {
       font-size: 60px;
       line-height: 85px;
+      @media all and (max-width: 767px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
     }
 
     .sU-box {

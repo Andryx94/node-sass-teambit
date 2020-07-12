@@ -2,19 +2,9 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-}
-
-@mixin clearfix{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@mixin centered{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  @media all and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 
 @mixin container{
@@ -35,10 +25,6 @@
 }
 
 @mixin signUp{
-  a{
-    color: $text_primary_color;
-  }
-  
   div{
     margin-bottom: 30px;
 
